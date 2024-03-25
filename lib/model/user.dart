@@ -1,13 +1,14 @@
-import 'package:flutter/cupertino.dart';
+import 'package:rest_api/model/user.dob.dart';
 import 'package:rest_api/model/user_name.dart';
 
-class User{
+class User {
   final String gender;
   final String email;
   final String phone;
   final String cell;
   final String nat;
   final UserName name;
+  final UserDob dob;
 
   User({
     required this.gender,
@@ -16,9 +17,10 @@ class User{
     required this.cell,
     required this.nat,
     required this.name,
+    required this.dob,
   });
 
-  String get fullName{
+  String get fullName {
     return '${name.title} ${name.first} ${name.last}';
   }
 }
