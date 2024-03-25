@@ -26,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('REST API TEST'),
+        title: const Text('REST API Random Name Test'),
       ),
 
 
