@@ -41,7 +41,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
 
             title: Text(user.fullName),
-            subtitle: Text(user.phone),
+            subtitle: Text(user.location.postcode),
             tileColor: color,
           );
           },
