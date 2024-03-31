@@ -1,5 +1,4 @@
-
-class UserName{
+class UserName {
   final String title;
   final String first;
   final String last;
@@ -9,5 +8,4 @@ class UserName{
     required this.first,
     required this.last,
   });
-
 }

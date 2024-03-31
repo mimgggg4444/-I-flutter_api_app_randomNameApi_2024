@@ -17,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
   List<User> users = [];
 
   @override
-  void initState(){
+  void initState() {
     super.initState();
     fetchUsers();
   }
@@ -29,27 +29,24 @@ class _HomeScreenState extends State<HomeScreen> {
         title: const Text('REST API Random Name Test'),
       ),
 
-
       // 이름, 이메일, 프사
-      body: ListView.builder
-        (itemCount: users.length,
-        itemBuilder: (context,index){
+      body: ListView.builder(
+        itemCount: users.length,
+        itemBuilder: (context, index) {
           final user = users[index];
           final email = user.email;
           final color = user.gender == 'male' ? Colors.blue : Colors.green;
           return ListTile(
-
-
             title: Text(user.fullName),
             subtitle: Text(user.location.postcode),
             tileColor: color,
           );
-          },
+        },
       ),
     );
   }
 
-  Future<void> fetchUsers() async{
+  Future<void> fetchUsers() async {
     final response = await UserApi.fetchUser();
     setState(() {
       users = response;

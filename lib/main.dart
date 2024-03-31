@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rest_api/screen/home.dart';
 
-void main(){
+void main() {
   runApp(const MyApp());
 }
 

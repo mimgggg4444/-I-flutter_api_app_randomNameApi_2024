@@ -17,6 +17,7 @@ class UserLocation {
     required this.timezon,
   });
 }
+
 class LocationStreet {
   final int number;
   final String name;
@@ -26,6 +27,7 @@ class LocationStreet {
     required this.number,
   });
 }
+
 class LocationCoordinate {
   final String latitude;
   final String longitude;
@@ -35,6 +37,7 @@ class LocationCoordinate {
     required this.longitude,
   });
 }
+
 class LocationTimezon {
   final String offset;
   final String description;
